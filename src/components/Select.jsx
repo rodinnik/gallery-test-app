@@ -23,6 +23,7 @@ class Select extends React.Component {
     return this.props.options.map((option) => {
       return (
         <div
+          key={option}
           className="select-item"
           onClick={() => {
             this.setState({ value: option });

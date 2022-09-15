@@ -6,6 +6,7 @@ class Gallery extends React.Component {
     return this.props.paintings.map((painting) => {
       return (
         <Painting
+          key = {painting.id}
           painting={painting}
           author={this.props.authors.find(
             (author) => author.id === painting.authorId
