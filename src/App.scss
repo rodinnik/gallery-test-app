@@ -28,6 +28,7 @@ html[data-theme="dark"] {
   --border-color-select: #ffffff;
   --border-color-select-line: rgba(255, 255, 255, 0.3);
   --background-color-created-input: #ffffff;
+  --color-created-line: #ffffff;
 }
 
 html[data-theme="light"] {
@@ -46,6 +47,7 @@ html[data-theme="light"] {
   --border-color-select: #000000;
   --border-color-select-line: rgba(0, 0, 0, 0.3);
   --background-color-created-input: #EFEFEF;
+  --color-created-line: #000000;
 }
 
 body {
@@ -332,6 +334,9 @@ body {
   svg {
     margin-left: 10px;
     margin-right: 10px;
+    line{
+      stroke: var(--color-created-line);
+    }
   }
 }
 
